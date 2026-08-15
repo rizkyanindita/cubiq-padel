@@ -224,7 +224,12 @@
       <a href="#visit" onclick="closeMenu()" data-i="nav_visit">Lokasi</a>
     </div>
     <div class="nav-right">
-      <a class="btn btn-ghost nav-book" href="https://link.ayo.co.id/l/YWuzoY9fmk-Cubiq-Padel" data-i="book">Pesan lapangan</a>
+      <a class="btn btn-ghost nav-book" href="https://link.ayo.co.id/l/YWuzoY9fmk-Cubiq-Padel" data-i="book" style="display:inline-flex;align-items:center;gap:6px">
+        <svg width="16" height="16" viewBox="0 0 64 34" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block">
+          <path d="M57.8301 0C59.8445 0.000122116 61.5605 0.910981 62.6641 2.56543C64.784 5.7416 64.3613 11.5423 61.5342 18.0811C59.8116 22.0557 57.2591 25.9999 54.5303 28.9023C52.3411 31.2275 48.9947 34 45.4893 34C43.4747 34 41.7579 33.0891 40.6543 31.4346C38.5336 28.2563 38.9571 22.4556 41.7852 15.9189C45.1261 8.20159 51.8847 0 57.8301 0ZM23.3701 7.87012C22.1852 11.2715 19.829 20.5573 23.5361 33.2959L23.6318 33.626H17.7148L17.6631 33.4336C17.0752 31.2276 16.728 29.5924 16.4531 27.7227C14.9703 28.4061 13.4313 29.0855 11.9395 29.7432C10.3785 30.4325 8.76562 31.1442 7.2207 31.8594L6.70801 33.626H0L0.147461 33.2686C0.456325 32.524 0.736142 31.8676 1.00391 31.2607C5.42532 21.1598 10.3808 13.9163 13.7578 9.61816L13.8154 9.54395L23.5215 7.43359L23.3701 7.87012ZM46.8789 2.94922C45.6719 4.30331 42.5306 8.0449 39.4336 13.5322C36.9635 17.9087 33.7126 24.9102 32.2568 33.4102L32.2197 33.625H26.4551L26.502 33.3271C27.0387 29.902 27.8831 26.448 29.0098 23.0615C27.6202 20.7264 25.3247 15.6687 25.0498 7.43262L25.043 7.21777L30.7217 5.9834L30.7266 6.30078C30.7687 9.68518 31.1965 12.7989 31.999 15.5684C32.7846 13.887 33.6409 12.2298 34.5479 10.6338C35.7729 8.47234 37.1182 6.35729 38.5479 4.35059L38.6055 4.26855L47.4082 2.35547L46.8789 2.94922ZM57.416 6.27832C56.7847 6.27853 55.1038 6.92757 52.8037 9.35742C50.6306 11.6538 48.6493 14.7273 47.2246 18.0146C46.2113 20.3576 45.5772 22.5966 45.3906 24.4893C45.1729 26.6794 45.6362 27.4978 45.7305 27.6396C45.7689 27.6961 45.7829 27.7106 45.7881 27.7139C45.7891 27.7139 45.8123 27.7217 45.9023 27.7217C46.5334 27.7217 48.2152 27.0728 50.5137 24.6436C52.6887 22.3472 54.6692 19.2725 56.0918 15.9863C56.5944 14.8288 57.0082 13.6821 57.3223 12.5762C57.6333 11.4791 57.8364 10.4481 57.9277 9.5127C58.1454 7.3255 57.6822 6.50415 57.5869 6.3623C57.5488 6.30479 57.5343 6.29108 57.5293 6.28711C57.5261 6.28621 57.4986 6.2793 57.416 6.2793V6.27832ZM15.9912 15.8174C13.7891 18.8873 11.5387 22.4756 9.67773 25.8818C10.5996 25.4315 11.534 24.9928 12.4629 24.5732C13.5813 24.0685 14.7257 23.5774 15.8662 23.1123C15.7779 21.4468 15.8236 19.285 15.8486 18.4111C15.8727 17.5486 15.92 16.68 15.9912 15.8174Z" fill="#9E0620"/>
+        </svg>
+        <span data-i="book">Pesan lapangan</span>
+      </a>
       <div class="lang">
         <button onclick="setLang('id')" id="l-id" class="on">ID</button>
         <button onclick="setLang('en')" id="l-en">EN</button>
@@ -270,9 +275,14 @@
     <div class="hero-safe">
       <div class="pill mono"><span class="status">BUKA<span class="colon">:</span> 06.00–24.00</span><span class="sep">·</span><b>★ 4.4</b> (138)</div>
       <h1 class="display" data-i="hero_title">Main padel,<br>trus <span class="ln2">ngopi.<svg viewBox="0 0 130 10" preserveAspectRatio="none"><path d="M2 6 Q65 2 128 6"/></svg></span></h1>
-      <p class="sub" data-i="hero_sub">Indoor, 2 lapangan panoramic kaca tinggi 12m — booking online lewat AYO, main dalam 10 menit.</p>
+      <p class="sub" id="heroSub">Indoor, 2 lapangan panoramic kaca tinggi 12m — booking online lewat <span style="color:#9E0620;font-weight:600">AYO</span>, main dalam 10 menit.</p>
       <div class="cta">
-        <a class="btn" href="https://link.ayo.co.id/l/YWuzoY9fmk-Cubiq-Padel" data-i="hero_book">Pesan lapangan via AYO</a>
+        <a class="btn" href="https://link.ayo.co.id/l/YWuzoY9fmk-Cubiq-Padel" data-i="hero_book" style="display:inline-flex;align-items:center;gap:8px">
+          <svg width="18" height="18" viewBox="0 0 64 34" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block">
+            <path d="M57.8301 0C59.8445 0.000122116 61.5605 0.910981 62.6641 2.56543C64.784 5.7416 64.3613 11.5423 61.5342 18.0811C59.8116 22.0557 57.2591 25.9999 54.5303 28.9023C52.3411 31.2275 48.9947 34 45.4893 34C43.4747 34 41.7579 33.0891 40.6543 31.4346C38.5336 28.2563 38.9571 22.4556 41.7852 15.9189C45.1261 8.20159 51.8847 0 57.8301 0ZM23.3701 7.87012C22.1852 11.2715 19.829 20.5573 23.5361 33.2959L23.6318 33.626H17.7148L17.6631 33.4336C17.0752 31.2276 16.728 29.5924 16.4531 27.7227C14.9703 28.4061 13.4313 29.0855 11.9395 29.7432C10.3785 30.4325 8.76562 31.1442 7.2207 31.8594L6.70801 33.626H0L0.147461 33.2686C0.456325 32.524 0.736142 31.8676 1.00391 31.2607C5.42532 21.1598 10.3808 13.9163 13.7578 9.61816L13.8154 9.54395L23.5215 7.43359L23.3701 7.87012ZM46.8789 2.94922C45.6719 4.30331 42.5306 8.0449 39.4336 13.5322C36.9635 17.9087 33.7126 24.9102 32.2568 33.4102L32.2197 33.625H26.4551L26.502 33.3271C27.0387 29.902 27.8831 26.448 29.0098 23.0615C27.6202 20.7264 25.3247 15.6687 25.0498 7.43262L25.043 7.21777L30.7217 5.9834L30.7266 6.30078C30.7687 9.68518 31.1965 12.7989 31.999 15.5684C32.7846 13.887 33.6409 12.2298 34.5479 10.6338C35.7729 8.47234 37.1182 6.35729 38.5479 4.35059L38.6055 4.26855L47.4082 2.35547L46.8789 2.94922ZM57.416 6.27832C56.7847 6.27853 55.1038 6.92757 52.8037 9.35742C50.6306 11.6538 48.6493 14.7273 47.2246 18.0146C46.2113 20.3576 45.5772 22.5966 45.3906 24.4893C45.1729 26.6794 45.6362 27.4978 45.7305 27.6396C45.7689 27.6961 45.7829 27.7106 45.7881 27.7139C45.7891 27.7139 45.8123 27.7217 45.9023 27.7217C46.5334 27.7217 48.2152 27.0728 50.5137 24.6436C52.6887 22.3472 54.6692 19.2725 56.0918 15.9863C56.5944 14.8288 57.0082 13.6821 57.3223 12.5762C57.6333 11.4791 57.8364 10.4481 57.9277 9.5127C58.1454 7.3255 57.6822 6.50415 57.5869 6.3623C57.5488 6.30479 57.5343 6.29108 57.5293 6.28711C57.5261 6.28621 57.4986 6.2793 57.416 6.2793V6.27832ZM15.9912 15.8174C13.7891 18.8873 11.5387 22.4756 9.67773 25.8818C10.5996 25.4315 11.534 24.9928 12.4629 24.5732C13.5813 24.0685 14.7257 23.5774 15.8662 23.1123C15.7779 21.4468 15.8236 19.285 15.8486 18.4111C15.8727 17.5486 15.92 16.68 15.9912 15.8174Z" fill="#9E0620"/>
+          </svg>
+          <span data-i="hero_book">Pesan lapangan via AYO</span>
+        </a>
       </div>
       <div class="stats">
         <div class="stat"><div class="n mono">06.00–24.00</div><div class="l" data-i="s_hours">Buka tiap hari</div></div>
@@ -351,7 +361,8 @@
         <div style="margin-top:22px;display:flex;gap:12px;flex-wrap:wrap">
           <a class="btn" href="#" onclick="openModal();return false" data-i="cafe_menu">Lihat menu digital</a>
           <a class="btn btn-ghost" href="#" onclick="openModal();return false" data-i="cafe_wa">Reservasi meja</a>
-          <a class="btn btn-ig" href="https://www.instagram.com/cubiqcoffee/" target="_blank" rel="noopener">
+          <a class="btn btn-ig" href="https://www.instagram.com/cubiqcoffee/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px">
+            <img src="assets/IG.png" alt="Instagram" style="width:20px;height:20px;display:block">
             <span data-i="cafe_ig">Instagram @cubiqcoffee</span><span class="arrow">↗</span>
           </a>
         </div>
@@ -410,8 +421,16 @@
       </div>
       <div style="display:flex;flex-direction:column;gap:12px;justify-content:center">
         <a class="btn" href="https://maps.app.goo.gl/bvyvxbq3ACqpZ1mb7" data-i="v_map">Buka di Google Maps</a>
-        <a class="btn btn-ghost" href="https://link.ayo.co.id/l/YWuzoY9fmk-Cubiq-Padel" data-i="v_book">Book lapangan via AYO</a>
-        <a class="btn btn-ghost" href="https://www.instagram.com/cubiqpadel/" data-i="v_ig">Instagram @cubiqpadel</a>
+        <a class="btn btn-ghost" href="https://link.ayo.co.id/l/YWuzoY9fmk-Cubiq-Padel" data-i="v_book" style="display:inline-flex;align-items:center;justify-content:center;gap:8px">
+          <svg width="16" height="16" viewBox="0 0 64 34" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block">
+            <path d="M57.8301 0C59.8445 0.000122116 61.5605 0.910981 62.6641 2.56543C64.784 5.7416 64.3613 11.5423 61.5342 18.0811C59.8116 22.0557 57.2591 25.9999 54.5303 28.9023C52.3411 31.2275 48.9947 34 45.4893 34C43.4747 34 41.7579 33.0891 40.6543 31.4346C38.5336 28.2563 38.9571 22.4556 41.7852 15.9189C45.1261 8.20159 51.8847 0 57.8301 0ZM23.3701 7.87012C22.1852 11.2715 19.829 20.5573 23.5361 33.2959L23.6318 33.626H17.7148L17.6631 33.4336C17.0752 31.2276 16.728 29.5924 16.4531 27.7227C14.9703 28.4061 13.4313 29.0855 11.9395 29.7432C10.3785 30.4325 8.76562 31.1442 7.2207 31.8594L6.70801 33.626H0L0.147461 33.2686C0.456325 32.524 0.736142 31.8676 1.00391 31.2607C5.42532 21.1598 10.3808 13.9163 13.7578 9.61816L13.8154 9.54395L23.5215 7.43359L23.3701 7.87012ZM46.8789 2.94922C45.6719 4.30331 42.5306 8.0449 39.4336 13.5322C36.9635 17.9087 33.7126 24.9102 32.2568 33.4102L32.2197 33.625H26.4551L26.502 33.3271C27.0387 29.902 27.8831 26.448 29.0098 23.0615C27.6202 20.7264 25.3247 15.6687 25.0498 7.43262L25.043 7.21777L30.7217 5.9834L30.7266 6.30078C30.7687 9.68518 31.1965 12.7989 31.999 15.5684C32.7846 13.887 33.6409 12.2298 34.5479 10.6338C35.7729 8.47234 37.1182 6.35729 38.5479 4.35059L38.6055 4.26855L47.4082 2.35547L46.8789 2.94922ZM57.416 6.27832C56.7847 6.27853 55.1038 6.92757 52.8037 9.35742C50.6306 11.6538 48.6493 14.7273 47.2246 18.0146C46.2113 20.3576 45.5772 22.5966 45.3906 24.4893C45.1729 26.6794 45.6362 27.4978 45.7305 27.6396C45.7689 27.6961 45.7829 27.7106 45.7881 27.7139C45.7891 27.7139 45.8123 27.7217 45.9023 27.7217C46.5334 27.7217 48.2152 27.0728 50.5137 24.6436C52.6887 22.3472 54.6692 19.2725 56.0918 15.9863C56.5944 14.8288 57.0082 13.6821 57.3223 12.5762C57.6333 11.4791 57.8364 10.4481 57.9277 9.5127C58.1454 7.3255 57.6822 6.50415 57.5869 6.3623C57.5488 6.30479 57.5343 6.29108 57.5293 6.28711C57.5261 6.28621 57.4986 6.2793 57.416 6.2793V6.27832ZM15.9912 15.8174C13.7891 18.8873 11.5387 22.4756 9.67773 25.8818C10.5996 25.4315 11.534 24.9928 12.4629 24.5732C13.5813 24.0685 14.7257 23.5774 15.8662 23.1123C15.7779 21.4468 15.8236 19.285 15.8486 18.4111C15.8727 17.5486 15.92 16.68 15.9912 15.8174Z" fill="#9E0620"/>
+          </svg>
+          <span data-i="v_book">Book lapangan via AYO</span>
+        </a>
+        <a class="btn btn-ghost" href="https://www.instagram.com/cubiqpadel/" data-i="v_ig" style="display:inline-flex;align-items:center;justify-content:center;gap:8px">
+          <img src="assets/IG.png" alt="Instagram" style="width:18px;height:18px;display:block">
+          <span>Instagram @cubiqpadel</span>
+        </a>
       </div>
     </div>
   </div>
@@ -421,17 +440,36 @@
   <div class="wrap">
     <div class="logo display">CUBIQ · PADEL</div>
     <div class="social">
-      <a href="https://wa.me/6285385796113" aria-label="WhatsApp">✆</a>
-      <a href="https://www.instagram.com/cubiqpadel/" aria-label="Instagram">◉</a>
+      <a href="https://wa.me/6285385796113" aria-label="WhatsApp" style="padding:6px"><img src="assets/WA.png" alt="WhatsApp" style="width:24px;height:24px;display:block;filter:brightness(0.6);transition:filter .2s" onmouseover="this.style.filter='brightness(1)'" onmouseout="this.style.filter='brightness(0.6)'"></a>
+      <a href="https://www.instagram.com/cubiqpadel/" aria-label="Instagram" style="padding:6px"><img src="assets/IG.png" alt="Instagram" style="width:24px;height:24px;display:block;filter:brightness(0.6);transition:filter .2s" onmouseover="this.style.filter='brightness(1)'" onmouseout="this.style.filter='brightness(0.6)'"></a>
       <a href="https://maps.app.goo.gl/bvyvxbq3ACqpZ1mb7" aria-label="Maps">⚲</a>
     </div>
     <div data-i="foot">© 2026 Cubiq Coffee & Padel · Boyolali, Jawa Tengah</div>
+    <div style="margin-top:24px;padding:20px;border:2px solid var(--green);border-radius:12px;background:rgba(22,179,100,.08)">
+      <div style="font-size:15px;font-weight:600;color:var(--txt);margin-bottom:14px">
+        💡 Mau website keren seperti ini?
+      </div>
+      <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;align-items:center">
+        <a href="https://www.instagram.com/rizkyaninditaa/" style="display:inline-flex;align-items:center;gap:8px;padding:10px 16px;background:var(--bg2);border:1px solid var(--green);color:var(--green);font-weight:600;text-decoration:none;font-size:13px;border-radius:8px;transition:all .2s" target="_blank" rel="noopener" onmouseover="this.style.background=window.getComputedStyle(document.documentElement).getPropertyValue('--green');this.style.color='#04140b'" onmouseout="this.style.background=window.getComputedStyle(document.documentElement).getPropertyValue('--bg2');this.style.color=window.getComputedStyle(document.documentElement).getPropertyValue('--green')">
+          <img src="assets/IG.png" alt="Instagram" style="width:18px;height:18px;display:block">
+          Instagram
+        </a>
+        <a href="https://wa.me/6285121319966" style="display:inline-flex;align-items:center;gap:8px;padding:10px 16px;background:var(--green);color:#04140b;font-weight:600;text-decoration:none;font-size:13px;border-radius:8px;transition:all .2s" target="_blank" rel="noopener" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+          <img src="assets/WA.png" alt="WhatsApp" style="width:18px;height:18px;display:block">
+          Chat via WhatsApp
+        </a>
+      </div>
+    </div>
   </div>
 </footer>
 
 <div class="fab">
-  <a class="wa" href="https://wa.me/6285385796113" aria-label="WhatsApp">✆</a>
-  <a class="bk" href="https://link.ayo.co.id/l/YWuzoY9fmk-Cubiq-Padel" aria-label="Book">◈</a>
+  <a class="wa" href="https://wa.me/6285385796113" aria-label="WhatsApp" style="display:flex;align-items:center;justify-content:center"><img src="assets/WA.png" alt="WhatsApp" style="width:28px;height:28px"></a>
+  <a class="bk" href="https://link.ayo.co.id/l/YWuzoY9fmk-Cubiq-Padel" aria-label="Book" style="display:flex;align-items:center;justify-content:center;padding:0">
+    <svg width="32" height="32" viewBox="0 0 64 34" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block">
+      <path d="M57.8301 0C59.8445 0.000122116 61.5605 0.910981 62.6641 2.56543C64.784 5.7416 64.3613 11.5423 61.5342 18.0811C59.8116 22.0557 57.2591 25.9999 54.5303 28.9023C52.3411 31.2275 48.9947 34 45.4893 34C43.4747 34 41.7579 33.0891 40.6543 31.4346C38.5336 28.2563 38.9571 22.4556 41.7852 15.9189C45.1261 8.20159 51.8847 0 57.8301 0ZM23.3701 7.87012C22.1852 11.2715 19.829 20.5573 23.5361 33.2959L23.6318 33.626H17.7148L17.6631 33.4336C17.0752 31.2276 16.728 29.5924 16.4531 27.7227C14.9703 28.4061 13.4313 29.0855 11.9395 29.7432C10.3785 30.4325 8.76562 31.1442 7.2207 31.8594L6.70801 33.626H0L0.147461 33.2686C0.456325 32.524 0.736142 31.8676 1.00391 31.2607C5.42532 21.1598 10.3808 13.9163 13.7578 9.61816L13.8154 9.54395L23.5215 7.43359L23.3701 7.87012ZM46.8789 2.94922C45.6719 4.30331 42.5306 8.0449 39.4336 13.5322C36.9635 17.9087 33.7126 24.9102 32.2568 33.4102L32.2197 33.625H26.4551L26.502 33.3271C27.0387 29.902 27.8831 26.448 29.0098 23.0615C27.6202 20.7264 25.3247 15.6687 25.0498 7.43262L25.043 7.21777L30.7217 5.9834L30.7266 6.30078C30.7687 9.68518 31.1965 12.7989 31.999 15.5684C32.7846 13.887 33.6409 12.2298 34.5479 10.6338C35.7729 8.47234 37.1182 6.35729 38.5479 4.35059L38.6055 4.26855L47.4082 2.35547L46.8789 2.94922ZM57.416 6.27832C56.7847 6.27853 55.1038 6.92757 52.8037 9.35742C50.6306 11.6538 48.6493 14.7273 47.2246 18.0146C46.2113 20.3576 45.5772 22.5966 45.3906 24.4893C45.1729 26.6794 45.6362 27.4978 45.7305 27.6396C45.7689 27.6961 45.7829 27.7106 45.7881 27.7139C45.7891 27.7139 45.8123 27.7217 45.9023 27.7217C46.5334 27.7217 48.2152 27.0728 50.5137 24.6436C52.6887 22.3472 54.6692 19.2725 56.0918 15.9863C56.5944 14.8288 57.0082 13.6821 57.3223 12.5762C57.6333 11.4791 57.8364 10.4481 57.9277 9.5127C58.1454 7.3255 57.6822 6.50415 57.5869 6.3623C57.5488 6.30479 57.5343 6.29108 57.5293 6.28711C57.5261 6.28621 57.4986 6.2793 57.416 6.2793V6.27832ZM15.9912 15.8174C13.7891 18.8873 11.5387 22.4756 9.67773 25.8818C10.5996 25.4315 11.534 24.9928 12.4629 24.5732C13.5813 24.0685 14.7257 23.5774 15.8662 23.1123C15.7779 21.4468 15.8236 19.285 15.8486 18.4111C15.8727 17.5486 15.92 16.68 15.9912 15.8174Z" fill="#9E0620"/>
+    </svg>
+  </a>
 </div>
 
 <div class="modal-back" id="modal" onclick="if(event.target===this)closeModal()">
@@ -453,7 +491,7 @@ const T={
   nav_play:["Bermain","Play"], nav_events:["Event","Events"], nav_cafe:["Coffee","Coffee"], nav_visit:["Lokasi","Visit"],
   book:["Pesan lapangan","Book now"], reviews:["ulasan Google","Google reviews"],
   hero_title:["Main padel,<br>trus <span class=\"ln2\">ngopi.<svg viewBox=\"0 0 130 10\" preserveAspectRatio=\"none\"><path d=\"M2 6 Q65 2 128 6\"/></svg></span>","Play padel,<br>then <span class=\"ln2\">coffee.<svg viewBox=\"0 0 130 10\" preserveAspectRatio=\"none\"><path d=\"M2 6 Q65 2 128 6\"/></svg></span>"],
-  hero_sub:["Indoor, 2 lapangan panoramic kaca tinggi 12m — booking online lewat AYO, main dalam 10 menit.","Indoor, 2 panoramic glass courts, 12m high — book online via AYO, playing in 10 minutes."],
+  hero_sub:["Indoor, 2 lapangan panoramic kaca tinggi 12m — booking online lewat <span style='color:#9E0620 !important;font-weight:600'>AYO</span>, main dalam 10 menit.","Indoor, 2 panoramic glass courts, 12m high — book online via <span style='color:#9E0620 !important;font-weight:600'>AYO</span>, playing in 10 minutes."],
   hero_book:["Pesan lapangan via AYO","Book a court via AYO"],
   s_hours:["Buka tiap hari","Open daily"], s_courts_n:["Kaca panoramic 12m","12m panoramic glass"], s_courts:["2 lapangan indoor","2 indoor courts"], s_scroll:["Scroll","Scroll"],
   play_eye:["Sewa lapangan","Book a court"], play_h:["Main kapan saja","Play anytime"],
@@ -485,6 +523,8 @@ let LANG='id';
 function setLang(l){
   LANG=l; const i=l==='en'?1:0;
   document.querySelectorAll('[data-i]').forEach(e=>{const k=e.getAttribute('data-i');if(T[k])e.innerHTML=T[k][i];});
+  const heroSub=document.getElementById('heroSub');
+  if(heroSub){heroSub.innerHTML=i===0?"Indoor, 2 lapangan panoramic kaca tinggi 12m — booking online lewat <span style=\"color:#9E0620;font-weight:600\">AYO</span>, main dalam 10 menit.":"Indoor, 2 panoramic glass courts, 12m high — book online via <span style=\"color:#9E0620;font-weight:600\">AYO</span>, playing in 10 minutes.";}
   document.getElementById('l-en').classList.toggle('on',l==='en');
   document.getElementById('l-id').classList.toggle('on',l==='id');
   document.documentElement.lang=l; renderEvents();
