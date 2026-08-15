@@ -149,7 +149,8 @@
   .btn-ig:hover .arrow{transform:translate(2px,-2px)}
 
   .gal{display:grid;grid-template-columns:1.3fr 1fr;grid-template-rows:repeat(2,180px);gap:12px;margin-top:32px}
-  .gal-item{position:relative;overflow:hidden;border-radius:16px;border:1px solid var(--line);background:var(--bg2);cursor:zoom-in;display:block}
+  .gal-item{position:relative;overflow:hidden;border-radius:16px;border:1px solid var(--line);background:var(--bg2);cursor:zoom-in;display:block;width:100%;height:100%}
+  .gal-item picture{display:block;width:100%;height:100%}
   .gal-a{grid-row:1 / span 2}
   .gal-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease-out}
   .gal-item:hover img{transform:scale(1.08)}
@@ -368,28 +369,28 @@
 <section id="gallery">
   <div class="wrap">
     <div class="eyebrow" data-i="gal_eye">Galeri</div>
-    <h2 class="h2 display" data-i="gal_h">Suasana Cubiq</h2>
+    <h2 class="h2 display" data-i="gal_h">Cubiq Vibes</h2>
     <div class="gal">
       <a class="gal-item gal-a" href="assets/galeri.jpg" onclick="return openLightbox(this)">
         <picture>
           <source srcset="assets/galeri.webp" type="image/webp">
-          <img src="assets/galeri.jpg" alt="Lapangan Cubiq" width="720" height="900" loading="lazy" decoding="async">
+          <img src="assets/galeri.jpg" alt="Lapangan Cubiq" width="720" height="900" loading="eager">
         </picture>
-        <span class="gal-cap"><span class="ic">◱</span><span data-i="gal_a">Lapangan super-panoramic</span></span>
+        <span class="gal-cap"><span class="ic">◱</span><span data-i="gal_a">Instagramable</span></span>
       </a>
       <a class="gal-item" href="assets/galeri2.jpg" onclick="return openLightbox(this)">
         <picture>
           <source srcset="assets/galeri2.webp" type="image/webp">
-          <img src="assets/galeri2.jpg" alt="Suasana Cubiq" width="720" height="405" loading="lazy" decoding="async">
+          <img src="assets/galeri2.jpg" alt="Suasana Cubiq" width="720" height="405" loading="eager">
         </picture>
-        <span class="gal-cap"><span class="ic">◱</span><span data-i="gal_b">Suasana bermain</span></span>
+        <span class="gal-cap"><span class="ic">◱</span><span data-i="gal_b">Champion</span></span>
       </a>
       <a class="gal-item" href="assets/galeri3.jpg" onclick="return openLightbox(this)">
         <picture>
           <source srcset="assets/galeri3.webp" type="image/webp">
-          <img src="assets/galeri3.jpg" alt="Coffee shop Cubiq" width="720" height="900" loading="lazy" decoding="async">
+          <img src="assets/galeri3.jpg" alt="Coffee shop Cubiq" width="720" height="900" loading="eager">
         </picture>
-        <span class="gal-cap"><span class="ic">◱</span><span data-i="gal_c">Coffee shop</span></span>
+        <span class="gal-cap"><span class="ic">◱</span><span data-i="gal_c">Panoramic Court</span></span>
       </a>
     </div>
     <p class="note" data-i="gal_note">Ketuk foto untuk memperbesar.</p>

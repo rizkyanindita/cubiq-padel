@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -m http.server 5500 > /tmp/server.log 2>&1 & *)",
+      "Bash(curl -s http://localhost:5500/assets/galeri.jpg -I)",
+      "Bash(firefox --headless --screenshot=/tmp/gallery.png http://localhost:5500)",
+      "Bash(kill %1)",
+      "Bash(pkill -f \"python3 -m http.server 5500\")",
+      "Bash(python3 -m http.server 5500)",
+      "Bash(curl -s http://localhost:5500/)",
+      "Bash(cat)",
+      "Bash(cp /tmp/test-gallery.html /Users/64664/pribadi/cubiq-padel-site/test-gallery.html)",
+      "Bash(firefox http://localhost:5500)",
+      "Bash(firefox --headless -screenshot /tmp/gallery-fixed.png http://localhost:5500)",
+      "Bash(killall firefox *)",
+      "Bash(pkill -9 firefox)"
+    ],
+    "additionalDirectories": [
+      "/tmp"
+    ]
+  }
+}
