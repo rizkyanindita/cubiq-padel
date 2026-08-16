@@ -1,6 +1,6 @@
 # Cubiq Coffee & Padel — Microsite
 
-Single-page microsite untuk Cubiq Coffee & Padel (Boyolali). Vanilla HTML/CSS/JS, satu file `index.html`, tanpa build step. Font Google (Anton + Inter), tema gelap + aksen hijau brand. Toggle bahasa ID/EN, animasi hero, modal, section event per-bulan.
+Single-page microsite untuk Cubiq Coffee & Padel (Boyolali). Vanilla HTML/CSS/JS di satu file `index.html`, di-build pakai Vite (cuma buat bundling Vercel Analytics — markup/style/script tetap inline). Font Google (Anton + Inter), tema gelap + aksen hijau brand. Toggle bahasa ID/EN, animasi hero, modal, section event per-bulan.
 
 ## Data resmi (jangan diubah tanpa konfirmasi)
 - Nama: Cubiq Coffee & Padel
@@ -19,7 +19,10 @@ Single-page microsite untuk Cubiq Coffee & Padel (Boyolali). Vanilla HTML/CSS/JS
 
 ## Struktur
 - index.html — seluruh markup, style (dalam <style>), dan script (dalam <script>)
-- assets/hero.jpg — foto hero (dulu base64, sudah diekstrak)
+- src/main.js — entry module, isinya cuma `inject()` dari @vercel/analytics
+- public/assets/ — semua foto. Disalin apa adanya oleh Vite (tanpa hashing), dirujuk pakai path absolut `/assets/...`
+- vite.config.js — bundle keluar ke `dist/bundle/` supaya tidak campur `dist/assets/`
+- vercel.json — framework vite, output `dist`
 
 ## Konvensi
 - i18n: elemen pakai atribut data-i="key"; teksnya di objek `T` (array [ID, EN]). Tambah teks baru: isi T lalu pasang data-i.
@@ -35,4 +38,10 @@ Single-page microsite untuk Cubiq Coffee & Padel (Boyolali). Vanilla HTML/CSS/JS
 6. Deploy ke Vercel/Netlify (drag & drop folder) → jadikan link pengganti di bio IG.
 
 ## Preview lokal
-python3 -m http.server 5500   # lalu buka http://localhost:5500
+npm run dev       # dev server Vite
+npm run build     # build ke dist/
+npm run preview   # cek hasil build
+
+Catatan: foto ditaruh di `public/assets/` dan dirujuk `/assets/...` (bukan `assets/...`).
+Alasannya lightbox memasangkan `<a href>` dengan `<img src>` — Vite cuma menulis ulang
+yang `src`, jadi kalau di-hash href-nya menunjuk file yang tidak ada.
